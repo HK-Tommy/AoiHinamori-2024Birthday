@@ -32,7 +32,7 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-.pages1, .pages2, .pages3, .contact {
+.pages1, .pages2, .pages3, .contact, .download {
     background-color: antiquewhite;
     color:white;
     height:95vh;
@@ -69,7 +69,7 @@ header a:hover {
     font-size:20px;
     margin: 5px;
 }
-.pages1 a, .pages2 a, .pages3 a, .contact a{
+.pages1 a, .pages2 a, .pages3 a, .contact a, .download a{
     color:#ffffff;
     text-decoration: none;
     border: 1px solid #ACACAC;
