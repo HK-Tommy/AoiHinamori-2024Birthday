@@ -5,25 +5,30 @@ function GetParams() {
     if (pages === "1") {
         document.getElementById('pages2').style.display = 'none'
         document.getElementById('pages3').style.display = 'none'
+        document.getElementById('contact').style.display = 'none'
         document.getElementById('pages1').style.display = ''
     }
     else if (pages === "2") {
         document.getElementById('pages1').style.display = 'none'
         document.getElementById('pages3').style.display = 'none'
+        document.getElementById('contact').style.display = 'none'
         document.getElementById('pages2').style.display = ''
 
     }
     else if (pages === "3") {
         document.getElementById('pages1').style.display = 'none'
         document.getElementById('pages2').style.display = 'none'
+        document.getElementById('contact').style.display = 'none'
         document.getElementById('pages3').style.display = ''
     }
     else if (pages === "download") {
-        location = '#'
+        window.open('https://1drv.ms/u/s!AmxjBGhGag2mhI0cVE2fRzpNGlRcww?e=EvimS2', '_blank');
     }
     else if (pages === "contact") {
-        alert("可透過以下方式與本人聯絡 : DC : hk_tommylam, E-mail : tlamhappy10@gmail.com ")
-        location = 'index.html'
+        document.getElementById('pages1').style.display = 'none'
+        document.getElementById('pages2').style.display = 'none'
+        document.getElementById('pages3').style.display = 'none'
+        document.getElementById('contact').style.display = ''
     }
 }
 GetParams();
