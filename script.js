@@ -29,6 +29,5 @@ function GetParams() {
 GetParams();
 
 if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
-    alert("此網站暫時僅支援電腦或IPad ! ")
-    window.close();
+    window.location.replace('error.html');
 }
