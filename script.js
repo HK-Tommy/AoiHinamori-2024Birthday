@@ -48,11 +48,22 @@ function redirectpage(url) {
     window.location.replace(url);
 }
 
+displayMenu = false
 function menu() {
-    document.getElementById('pages1').style.display = 'none'
-    document.getElementById('pages2').style.display = 'none'
-    document.getElementById('pages3').style.display = 'none'
-    document.getElementById('contact').style.display = 'none'
-    document.getElementById('download').style.display = 'none'
-    document.getElementById('menupage').style.display = ''
+    if (displayMenu)
+    {
+        window.location = orginalPage
+        displayMenu = false
+    }
+    else
+    {
+        document.getElementById('pages1').style.display = 'none'
+        document.getElementById('pages2').style.display = 'none'
+        document.getElementById('pages3').style.display = 'none'
+        document.getElementById('contact').style.display = 'none'
+        document.getElementById('download').style.display = 'none'
+        document.getElementById('menupage').style.display = ''
+        displayMenu = true
+        orginalPage = window.location.href
+    }
 }
