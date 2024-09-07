@@ -64,6 +64,6 @@ function menu() {
         document.getElementById('download').style.display = 'none'
         document.getElementById('menupage').style.display = ''
         displayMenu = true
-        orginalPage = window.location.href
+        orginalPage = document.URL
     }
 }
