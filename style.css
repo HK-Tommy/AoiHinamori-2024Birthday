@@ -32,7 +32,7 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-.pages1, .pages2, .pages3, .contact, .download {
+.pages1, .pages2, .pages3, .contact, .download, .menupage{
     background-color: antiquewhite;
     color:white;
     height:95vh;
@@ -69,12 +69,28 @@ header a:hover {
     font-size:20px;
     margin: 5px;
 }
-.pages1 a, .pages2 a, .pages3 a, .contact a, .download a{
+.menupage p {
+    color:#FEF7E6;
+    font-size:20px;
+    margin: 5px;
+}
+.pages1 a, .pages2 a, .pages3 a, .contact a, .download a, .menupage a{
     color:#ffffff;
     text-decoration: none;
     border: 1px solid #ACACAC;
     padding:10px 20px;
     border-radius: 5px;
+}
+.menupage a{
+    color:#ffffff;
+    text-decoration: none;
+    border: 1px solid #ACACAC;
+    padding:10px 20px;
+    border-radius: 5px;
+    width: 120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 footer {
     background-color:#000000;
@@ -111,5 +127,21 @@ header h1 {
     left:20px;
     border:none;
     cursor: pointer;
+}
+h1 {
+    font-size:20px;
+}
+.pages1 h2 {
+    font-size:35px;
+    margin-top:60px;
+}
+.pages2 p, .pages3 p, .contact p {
+    color:#FEF7E6;
+    font-size:15px;
+    margin: 8px;
+    
+}
+#a_contact, #a_report, #divider {
+    display: none;
 }
 }

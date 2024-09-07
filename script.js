@@ -44,10 +44,15 @@ function GetParams() {
 }
 GetParams();
 
-if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
-    window.location.replace('error.html');
-}
-
 function redirectpage(url) {
     window.location.replace(url);
+}
+
+function menu() {
+    document.getElementById('pages1').style.display = 'none'
+    document.getElementById('pages2').style.display = 'none'
+    document.getElementById('pages3').style.display = 'none'
+    document.getElementById('contact').style.display = 'none'
+    document.getElementById('download').style.display = 'none'
+    document.getElementById('menupage').style.display = ''
 }
