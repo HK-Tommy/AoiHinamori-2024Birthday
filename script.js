@@ -56,13 +56,22 @@ function menu() {
         displayMenu = false
     }
     else
-    {
-        document.getElementById('pages1').style.display = 'none'
-        document.getElementById('pages2').style.display = 'none'
-        document.getElementById('pages3').style.display = 'none'
-        document.getElementById('contact').style.display = 'none'
-        document.getElementById('download').style.display = 'none'
-        document.getElementById('menupage').style.display = ''
+    {   
+        console.log(document.URL)
+        if (document.URL.includes('404.html'))
+        {
+            document.getElementById('pages1').style.display = 'none'
+            document.getElementById('menupage').style.display = ''
+        }
+        else
+        {
+            document.getElementById('pages1').style.display = 'none'
+            document.getElementById('pages2').style.display = 'none'
+            document.getElementById('pages3').style.display = 'none'
+            document.getElementById('contact').style.display = 'none'
+            document.getElementById('download').style.display = 'none'
+            document.getElementById('menupage').style.display = ''
+        }
         displayMenu = true
         orginalPage = document.URL
     }
