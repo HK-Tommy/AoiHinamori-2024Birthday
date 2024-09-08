@@ -72,7 +72,7 @@ function menu() {
             document.getElementById('download').style.display = 'none'
             document.getElementById('menupage').style.display = ''
         }
-        displayMenu = true
+        displayMenu = true 
         orginalPage = document.URL
     }
 }
