@@ -76,3 +76,11 @@ function menu() {
         orginalPage = document.URL
     }
 }
+
+if (
+    navigator.userAgent.match(/Mobi/i) ||
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/iPhone/i)
+  ) {
+    document.getElementById('nav').style.display = 'none'
+  }
