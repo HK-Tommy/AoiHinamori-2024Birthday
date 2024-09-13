@@ -23,7 +23,7 @@ function GetParams() {
         document.getElementById('pages3').style.display = ''
     }
     else if (pages === "download") {
-        window.open('https://1drv.ms/u/s!AmxjBGhGag2mhI0cVE2fRzpNGlRcww?e=EvimS2', '_blank');
+        window.open('download.html', '_blank');
         document.getElementById('pages1').style.display = 'none'
         document.getElementById('pages2').style.display = 'none'
         document.getElementById('pages3').style.display = 'none'
